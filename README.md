@@ -1,4 +1,4 @@
-`Ethereum Wallet`
+# Ethereum Wallet
 
 `This is a simple implementation of a web Ethereum Wallet that we developed as a group for our final project in the Full Stack II Development Course.
 With this wallet, you can import your wallet using private key, add ERC20 tokens and work with different Ethereum networks such as Ethereum,
