@@ -1,83 +1,22 @@
-# Simple Ethereum Wallet
+`Ethereum Wallet`
 
-This is a simple implementation of a web based Ethereum wallet built with React, Typescript & Web3.js
-<br/>
-<img src="https://github.com/davolu/oh-ethereum-wallet/blob/master/public/screenshotdemo.png" />
-<br/>
+`This is a simple implementation of a web Ethereum Wallet that we developed as a group for our final project in the Full Stack II Development Course.
+With this wallet, you can import your wallet using private key, add ERC20 tokens and work with different Ethereum networks such as Ethereum,
+Polygon, Optimism, Palm, Avalanche C-Chain, Near Protocol, Starknet, and Aurora. Also, with this app, you can transfer Ethereum and ERC20 tokens and see 
+balances.` 
 
-<a  href="https://oh-ethereum-wallet.herokuapp.com"  target="_blank">Demo</a>
+`Also, this project was hosted using the CI/CD pipeline. We tested and built our application using GitHub Workflows, then the Docker container was created using Jenkins Pipeline, and the Jenkins server 
+was hosted using Ansible node. After that, we deployed our application to Azure Kubernetes Cluster using Terraform and we did final tests using JMeter. Jenkins and Docker files are in this repo.`
 
-# Features
+`To run the project use:`
 
-- Import Wallets via Private Key
-- Add any ECR20 Token
-- Switch between networks. Supported Networks:
-  - Ethereum
-  - Polygon
-  - Optimism
-  - Palm
-  - Avalanche C-Chain
-  - Near Protocol
-  - Starknet
-  - Aurora
-- Transfer Ecr20 tokens
-- View Wallet & Tokens Balance
+`yarn install`
 
-## ECR20 TOKEN - PlayoCoin (PLAYCN)
+`yarn test`
 
-The PLAYCN was created using Solidity ... openzeppelin... It's deployed to the Testnet on the Polygon network with 1000 total supply for demo sakes.
+`UI screenshots:`
 
-<pre>
-`
-// SPDX-License-Identifier: MIT 
-pragma solidity ^0.8.2; 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol"; 
-contract PolyCoin is ERC20 { 
-    constructor() ERC20("PlayoCoin", "PLAYCN") { 
-        _mint(msg.sender, 1000 * 10 ** decimals()); 
-    }
-}
-`
-</pre>
-<br/>
-Token Contract Address: 0x9f20AE147f2ad0BF8CE950b13264ccACaA66108A
-<br/>
-<a href="https://mumbai.polygonscan.com/address/0x9f20AE147f2ad0BF8CE950b13264ccACaA66108A" target="_blank">View on PolygonScan</a>
-
-## Add PLAYCN TOKEN
-
-1. <img src="https://github.com/davolu/oh-ethereum-wallet/blob/master/public/screenshot-add-custom-playcn-token.png" />
-   <br/>
-2. <img src="https://github.com/davolu/oh-ethereum-wallet/blob/master/public/screenshot-playcn-added.png" />
-
-## Configutations
-
-You will need to get a project key from infuria.io (or preferred provider) and edit in your env file as:
-`REACT_APP_INFURIA_ID=<YOUR INFURIA PROJECT ID>`
-
-## Running the project
-
-In the project directory:
-
-### `yarn install`
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed! 
+![111](https://github.com/KirillSpitsyn/EthereumWallet-CI-CD-Project/assets/72778161/64e1cf17-b7c6-43f8-b9e0-1c0447ae4682)
+![112](https://github.com/KirillSpitsyn/EthereumWallet-CI-CD-Project/assets/72778161/3e3a9b55-b8bf-478a-80f6-9c9160387fd9)
+![113](https://github.com/KirillSpitsyn/EthereumWallet-CI-CD-Project/assets/72778161/6ea384c8-e733-4c98-ba61-5f3717fe5ef6)
+![114](https://github.com/KirillSpitsyn/EthereumWallet-CI-CD-Project/assets/72778161/430c71da-cd8b-45df-afc7-67dfb7c6d644)
